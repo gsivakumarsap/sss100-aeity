@@ -7,7 +7,7 @@ const HeroSection = () => {
 
   const slides = [
     {
-      image: '../../assets/satyasai1.png',
+      image: 'https://raw.githubusercontent.com/gsivakumarsap/sss100-aeity/refs/heads/main/assets/satyasai1.png',
       title: 'Celebrating 100 Years of Divine Love',
       subtitle:
         'Join millions worldwide in honoring Bhagawan Sri Sathya Sai Baba',
