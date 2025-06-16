@@ -1,5 +1,6 @@
 // eslint-disable-next-line no-unused-vars
 import React, { useState, useEffect } from 'react'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Header from './components/Header.jsx'
 import HeroSection from './components/HeroSection.jsx'
 import AboutVision from './components/AboutVision.jsx'
@@ -10,6 +11,8 @@ import MediaGallery from './components/MediaGallery.jsx'
 import Footer from './components/Footer.jsx'
 import LoadingSpinner from './components/LoadingSpinner.jsx'
 import DigitalPlatform from './components/DigitalPlatforms.jsx'
+import Marketplace from './components/Marketplace.jsx'
+import Ebazaar from './components/Ebazaar.jsx'
 
 function App() {
   const [isLoading, setIsLoading] = useState(true)
@@ -62,46 +65,49 @@ function App() {
   }
 
   return (
-    <div className="min-h-screen bg-white">
+    <Router>
       <Header currentSection={currentSection} />
-
-      <main>
-        <section id="home">
-          <HeroSection />
-        </section>
-
-        <section id="about">
-          <div className="py-6"></div>
-          <AboutVision />
-        </section>
-
-        <section id="celebration">
-          <div className="py-6"></div>
-          <CelebrationHighlights />
-        </section>
-
-        <section id="digital-platforms">
-          <DigitalPlatform />
-        </section>
-
-        <section id="involved">
-          <div className="py-6"></div>
-          <GetInvolved />
-        </section>
-
-        <section id="donate">
-          <div className="py-6"></div>
-          <DonationSection />
-        </section>
-
-        <section id="media">
-          <div className="py-6"></div>
-          <MediaGallery />
-        </section>
-      </main>
-
-      <Footer />
-    </div>
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <div className="min-h-screen bg-white">
+              <main>
+                <section id="home">
+                  <HeroSection />
+                </section>
+                <section id="about">
+                  <div className="py-6" />
+                  <AboutVision />
+                </section>
+                <section id="celebration">
+                  <div className="py-6" />
+                  <CelebrationHighlights />
+                </section>
+                <section id="digital-platforms">
+                  <DigitalPlatform />
+                </section>
+                <section id="involved">
+                  <div className="py-6" />
+                  <GetInvolved />
+                </section>
+                <section id="donate">
+                  <div className="py-6" />
+                  <DonationSection />
+                </section>
+                <section id="media">
+                  <div className="py-6" />
+                  <MediaGallery />
+                </section>
+              </main>
+              <Footer />
+            </div>
+          }
+        />
+        <Route path="/marketplace" element={<Marketplace />} />
+        <Route path="/ebazaar" element={<Ebazaar />} />
+      </Routes>
+    </Router>
   )
 }
 
