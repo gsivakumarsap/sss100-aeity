@@ -25,7 +25,7 @@ const Header = ({ currentSection }) => {
     { id: 'donate', label: 'Donate' },
     { id: 'media', label: 'Media' },
     { id: 'marketplace', label: 'Marketplace' },
-    { id: 'ebazaar', label: 'Ebazaar' },
+    { id: 'ebazaar', label: 'eBazaar' },
   ]
 
   useEffect(() => {
