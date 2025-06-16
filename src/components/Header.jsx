@@ -1,5 +1,7 @@
-import React, { useState, useEffect } from 'react'
+import { useState, useEffect } from 'react'
 import { Menu, X, Flower2, Globe, ChevronDown } from 'lucide-react'
+
+import { useNavigate } from 'react-router-dom'
 
 const Header = ({ currentSection }) => {
   const [isScrolled, setIsScrolled] = useState(false)
@@ -34,6 +36,17 @@ const Header = ({ currentSection }) => {
     window.addEventListener('scroll', handleScroll)
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
+
+  // Inside component:
+  const navigate = useNavigate()
+
+  const handleNavClick = (id) => {
+    if (id === 'marketplace' || id === 'ebazaar') {
+      navigate(`/${id}`)
+    } else {
+      scrollToSection(id)
+    }
+  }
 
   const scrollToSection = sectionId => {
     const element = document.getElementById(sectionId)
@@ -92,7 +105,7 @@ const Header = ({ currentSection }) => {
             {navItems.map(item => (
               <button
                 key={item.id}
-                onClick={() => scrollToSection(item.id)}
+                onClick={() => handleNavClick(item.id)}
                 className={`relative font-medium transition-colors duration-300 hover:scale-105 ${
                   currentSection === item.id
                     ? isScrolled
@@ -104,13 +117,6 @@ const Header = ({ currentSection }) => {
                 }`}
               >
                 {item.label}
-                {currentSection === item.id && (
-                  <div
-                    className={`absolute -bottom-1 left-0 right-0 h-0.5 rounded-full ${
-                      isScrolled ? 'bg-saffron-600' : 'bg-white'
-                    }`}
-                  />
-                )}
               </button>
             ))}
           </nav>
