@@ -186,7 +186,7 @@ const HeroSection = () => {
             </button>
             <div className="aspect-video bg-black rounded-lg overflow-hidden">
               <iframe
-                src="https://www.youtube.com/embed/SK9vctMWviE?autoplay=1"
+                src="https://www.youtube.com/embed/ZsdDFVVHl7Y?autoplay=1"
                 title="Sathya Sai Baba Centennial Message"
                 className="w-full h-full"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
