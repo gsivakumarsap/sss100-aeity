@@ -1,6 +1,7 @@
 import { useState } from 'react'
+import { Link } from 'react-router-dom'
 
-const SathyaSai100Marketplace = () => {
+const Marketplace = () => {
   const [selectedLanguage, setSelectedLanguage] = useState('en')
   const [activeFilter, setActiveFilter] = useState('all')
   const [searchQuery, setSearchQuery] = useState('')
@@ -121,7 +122,7 @@ const SathyaSai100Marketplace = () => {
               SathyaSai100
             </div>
             <div className="hidden md:flex items-center gap-8">
-              <a href="#home" className="hover:bg-white/20 px-4 py-2 rounded-full transition-all duration-300 hover:-translate-y-1">Home</a>
+              <Link to="/marketplace/products" className="hover:bg-white/20 px-4 py-2 rounded-full transition-all duration-300 hover:-translate-y-1">Products</Link>
               <a href="#marketplace" className="hover:bg-white/20 px-4 py-2 rounded-full transition-all duration-300 hover:-translate-y-1">Marketplace</a>
               <a href="#vendors" className="hover:bg-white/20 px-4 py-2 rounded-full transition-all duration-300 hover:-translate-y-1">Vendors</a>
               <a href="#about" className="hover:bg-white/20 px-4 py-2 rounded-full transition-all duration-300 hover:-translate-y-1">About</a>
@@ -154,6 +155,10 @@ const SathyaSai100Marketplace = () => {
             Rooted in values of love, service, and self-reliance.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Link to="/marketplace/products" className="bg-gradient-to-r from-orange-400 to-yellow-400 text-white px-8 py-4 rounded-full text-lg font-semibold hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex items-center justify-center gap-2">
+              <span>🛍️</span>
+              Shop Products
+            </Link>
             <button className="bg-gradient-to-r from-orange-400 to-yellow-400 text-white px-8 py-4 rounded-full text-lg font-semibold hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex items-center justify-center gap-2">
               <span>🏪</span>
               Register Your Business
@@ -171,7 +176,7 @@ const SathyaSai100Marketplace = () => {
         <div className="max-w-6xl mx-auto px-4">
           <h2 className="text-4xl font-bold text-center text-amber-900 mb-4 relative">
             Why Join the Sathya Sai 100 Marketplace?
-            <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-24 h-1 bg-gradient-to-r from-orange-400 to-yellow-400 rounded-full"></div>
+            <div className="absolute bottom-[-2] left-1/2 transform -translate-x-1/2 w-64 h-1 bg-gradient-to-r from-orange-400 to-yellow-400 rounded-full"></div>
           </h2>
           <p className="text-center text-xl text-amber-700 max-w-4xl mx-auto mb-12">
             Powered by AEITY Systems, we blend cutting-edge technology with dharma to help you grow while serving the community.
@@ -193,7 +198,7 @@ const SathyaSai100Marketplace = () => {
         <div className="max-w-6xl mx-auto px-4">
           <h2 className="text-4xl font-bold text-center text-amber-900 mb-4 relative">
             Who Can Register?
-            <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-24 h-1 bg-gradient-to-r from-orange-400 to-yellow-400 rounded-full"></div>
+            <div className="absolute bottom-[-2] left-1/2 transform -translate-x-1/2 w-64 h-1 bg-gradient-to-r from-orange-400 to-yellow-400 rounded-full"></div>
           </h2>
           <p className="text-center text-xl text-amber-700 mb-12">
             Open to ethical businesses & entrepreneurs in diverse sectors:
@@ -215,7 +220,7 @@ const SathyaSai100Marketplace = () => {
         <div className="max-w-6xl mx-auto px-4">
           <h2 className="text-4xl font-bold text-center text-amber-900 mb-8 relative">
             Find What You Need
-            <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-24 h-1 bg-gradient-to-r from-orange-400 to-yellow-400 rounded-full"></div>
+            <div className="absolute bottom-[-2] left-1/2 transform -translate-x-1/2 w-64 h-1 bg-gradient-to-r from-orange-400 to-yellow-400 rounded-full"></div>
           </h2>
           <div className="max-w-3xl mx-auto relative mb-8">
             <input
@@ -255,7 +260,7 @@ const SathyaSai100Marketplace = () => {
         <div className="max-w-6xl mx-auto px-4">
           <h2 className="text-4xl font-bold text-center text-amber-900 mb-12 relative">
             Trusted Vendors Near You
-            <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-24 h-1 bg-gradient-to-r from-orange-400 to-yellow-400 rounded-full"></div>
+            <div className="absolute bottom-[-2] left-1/2 transform -translate-x-1/2 w-64 h-1 bg-gradient-to-r from-orange-400 to-yellow-400 rounded-full"></div>
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {vendors.map((vendor) => (
@@ -370,4 +375,4 @@ const SathyaSai100Marketplace = () => {
   )
 }
 
-export default SathyaSai100Marketplace
+export default Marketplace
