@@ -1,4 +1,3 @@
-import React from 'react'
 import { User, Building2, Heart, BookOpen, ArrowRight, Quote } from 'lucide-react'
 
 const AboutVision = () => {
@@ -44,7 +43,7 @@ const AboutVision = () => {
                 <p className="text-lg text-sacred-600 leading-relaxed mb-6 pl-8">
                   This platform, envisioned by <span className="font-semibold text-saffron-600">Sivakumar G</span> and 
                   built by <span className="font-semibold text-saffron-600">AEITY Systems</span>, aims to unite 
-                  devotees, alumni, and seekers under one global roof — celebrating Sri Sathya Sai Baba's 
+                  devotees, alumni, and seekers under one global roof — celebrating Sri Sathya Sai Baba&apos;s 
                   divine mission of love, education, and transformation.
                 </p>
               </div>
@@ -69,9 +68,9 @@ const AboutVision = () => {
           <div className="relative">
             <div className="relative overflow-hidden rounded-2xl shadow-2xl">
               <img
-                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                src="/assets/shiva_sir.png"
                 alt="Spiritual gathering"
-                className="w-full h-96 object-cover"
+                className="w-full h-95 object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-saffron-900/50 to-transparent" />
               
@@ -87,7 +86,7 @@ const AboutVision = () => {
                   </div>
                 </div>
                 <p className="text-sm text-sacred-600">
-                  "Creating digital bridges for spiritual transformation and global unity."
+                  &quot;Creating digital bridges for spiritual transformation and global unity.&quot;
                 </p>
               </div>
             </div>
