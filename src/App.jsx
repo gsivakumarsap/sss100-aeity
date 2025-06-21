@@ -11,8 +11,10 @@ import MediaGallery from './components/MediaGallery.jsx'
 import Footer from './components/Footer.jsx'
 import LoadingSpinner from './components/LoadingSpinner.jsx'
 import DigitalPlatform from './components/DigitalPlatforms.jsx'
-import Marketplace from './components/Marketplace.jsx'
-import Ebazaar from './components/Ebazaar.jsx'
+import Marketplace from './components/marketplace/Marketplace.jsx'
+import Ebazaar from './components/ebazaar/Ebazaar.jsx'
+import MarketProducts from './components/marketplace/Products.jsx'
+import EbazaarProducts from './components/ebazaar/Products.jsx'
 
 function App() {
   const [isLoading, setIsLoading] = useState(true)
@@ -104,8 +106,10 @@ function App() {
             </div>
           }
         />
-        <Route path="/marketplace" element={<Marketplace />} />
-        <Route path="/ebazaar" element={<Ebazaar />} />
+        <Route exact path="/marketplace" element={<Marketplace />} />
+        <Route path="/marketplace/products" element={<MarketProducts />} />
+        <Route exact path="/ebazaar" element={<Ebazaar />} />
+        <Route path="/ebazaar/products" element={<EbazaarProducts />} />
       </Routes>
     </Router>
   )

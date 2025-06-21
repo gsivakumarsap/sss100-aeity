@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import { useEffect } from 'react'
 
 const Ebazaar = () => {
   useEffect(() => {
@@ -23,7 +23,7 @@ const Ebazaar = () => {
         <div className="max-w-6xl mx-auto flex justify-between items-center px-8">
           <div className="text-2xl font-bold bg-gradient-to-r from-indigo-400 to-purple-500 bg-clip-text text-transparent">AEITY eBazaar</div>
           <ul className="hidden md:flex gap-8 text-slate-200">
-            <li><a href="#home" className="nav-link">Home</a></li>
+            <li><a href="/ebazaar/products" className="nav-link">Products</a></li>
             <li><a href="#features" className="nav-link">Features</a></li>
             <li><a href="#app" className="nav-link">Mobile App</a></li>
             <li><a href="#roadmap" className="nav-link">Roadmap</a></li>
@@ -39,6 +39,7 @@ const Ebazaar = () => {
           <p className="text-xl">Revolutionizing Spiritual Commerce through Digital Innovation</p>
           <p className="text-lg opacity-90">Connecting souls, empowering businesses, transforming the spiritual marketplace</p>
           <div className="flex justify-center gap-4 flex-wrap">
+            <a href="/ebazaar/products" className="bg-yellow-400 text-white font-semibold py-3 px-6 rounded-full hover:-translate-y-1 transition shadow-lg">Shop Products</a>
             <a href="#features" className="bg-yellow-400 text-white font-semibold py-3 px-6 rounded-full hover:-translate-y-1 transition shadow-lg">Explore Platform</a>
             <a href="#app" className="border border-white text-white py-3 px-6 rounded-full hover:-translate-y-1 transition shadow-lg">View Mobile App</a>
           </div>
