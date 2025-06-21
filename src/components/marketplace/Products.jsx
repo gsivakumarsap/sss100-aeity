@@ -38,7 +38,7 @@ const MarketProducts = () => {
 
         <section className="flex justify-center gap-4 mb-8 flex-wrap">
           {['All Products', 'Books & Literature', 'Devotional Items', 'Commemoratives', 'Audio & Video', 'Clothing & Accessories'].map((category, index) => (
-            <a key={index} href="#" className="py-3 px-6 border-2 border-[#f6f4f4] text-[#f1f1f1] rounded-full hover:bg-gradient-to-r from-[#ff6b35] to-[#f7931e] text-white transition">{category}</a>
+            <a key={index} href="#" className="py-3 px-6 border-2 border-[#f6f4f4] text-[#f1f1f1] rounded-full hover:bg-gradient-to-r from-[#ff6b35] to-[#f7931e] transition">{category}</a>
           ))}
         </section>
 
