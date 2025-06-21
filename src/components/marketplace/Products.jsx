@@ -15,10 +15,10 @@ const MarketProducts = () => {
         <nav className="max-w-screen-xl mx-auto flex justify-between items-center px-8">
           <a href="#" className="text-2xl font-bold text-[#ff6b35]">Sathya Sai 100</a>
           <ul className="flex space-x-8">
-            <li><a href="#" className="text-gray-800 font-medium hover:bg-gradient-to-r from-[#ff6b35] to-[#f7931e] text-white py-2 px-4 rounded-lg transition">Home</a></li>
-            <li><a href="#" className="text-gray-800 font-medium hover:bg-gradient-to-r from-[#ff6b35] to-[#f7931e] text-white py-2 px-4 rounded-lg transition">Sai Store</a></li>
-            <li><a href="#" className="text-gray-800 font-medium hover:bg-gradient-to-r from-[#ff6b35] to-[#f7931e] text-white py-2 px-4 rounded-lg transition">Aeity Bazaar</a></li>
-            <li><a href="#events" className="text-gray-800 font-medium hover:bg-gradient-to-r from-[#ff6b35] to-[#f7931e] text-white py-2 px-4 rounded-lg transition">Events</a></li>
+            <li><a href="#" className="text-gray-800 font-medium hover:bg-gradient-to-r from-[#ff6b35] to-[#f7931e] py-2 px-4 rounded-lg transition">Home</a></li>
+            <li><a href="#" className="text-gray-800 font-medium hover:bg-gradient-to-r from-[#ff6b35] to-[#f7931e] py-2 px-4 rounded-lg transition">Sai Store</a></li>
+            <li><a href="#" className="text-gray-800 font-medium hover:bg-gradient-to-r from-[#ff6b35] to-[#f7931e] py-2 px-4 rounded-lg transition">Aeity Bazaar</a></li>
+            <li><a href="#events" className="text-gray-800 font-medium hover:bg-gradient-to-r from-[#ff6b35] to-[#f7931e] py-2 px-4 rounded-lg transition">Events</a></li>
             <li><a href="#cart" className="text-gray-800 font-medium hover:bg-gradient-to-r from-[#ff6b35] to-[#f7931e] text-white py-2 px-4 rounded-lg transition">Cart <span className="bg-[#ff6b35] text-white rounded-full py-1 px-2 text-sm">{cartCount}</span></a></li>
           </ul>
         </nav>

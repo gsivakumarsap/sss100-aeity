@@ -299,7 +299,7 @@ const Marketplace = () => {
         <div className="absolute inset-0 bg-gradient-to-r from-white/5 to-transparent"></div>
         <div className="max-w-4xl mx-auto px-4 relative z-10">
           <blockquote className="text-2xl md:text-3xl italic leading-relaxed mb-4">
-            "Love All, Serve All. Help Ever, Hurt Never."
+            &quot;Love All, Serve All. Help Ever, Hurt Never.&quot;
           </blockquote>
           <p className="text-xl font-bold">— Bhagawan Sri Sathya Sai Baba</p>
         </div>
