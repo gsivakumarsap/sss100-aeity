@@ -52,7 +52,7 @@ const MediaGallery = () => {
     {
       id: 4,
       title: 'Medical Service Camps',
-      image: 'https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80',
+      image: '',
       location: 'Rural Areas',
       date: '2025-11-15',
       views: '94K',

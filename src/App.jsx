@@ -15,6 +15,7 @@ import Marketplace from './components/marketplace/Marketplace.jsx'
 import Ebazaar from './components/ebazaar/Ebazaar.jsx'
 import MarketProducts from './components/marketplace/MarketProducts.jsx'
 import EbazaarProducts from './components/ebazaar/EbazaarProducts.jsx'
+import EbazaarExplore from './components/ebazaar/EbazaarExplore.jsx'
 
 function App() {
   const [isLoading, setIsLoading] = useState(true)
@@ -110,6 +111,7 @@ function App() {
         <Route path="/marketplace/products" element={<MarketProducts />} />
         <Route exact path="/ebazaar" element={<Ebazaar />} />
         <Route path="/ebazaar/products" element={<EbazaarProducts />} />
+        <Route path="/ebazaar/explore" element={<EbazaarExplore />} />
       </Routes>
     </Router>
   )
