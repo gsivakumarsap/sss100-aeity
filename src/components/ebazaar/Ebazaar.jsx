@@ -40,7 +40,7 @@ const Ebazaar = () => {
           <p className="text-lg opacity-90">Connecting souls, empowering businesses, transforming the spiritual marketplace</p>
           <div className="flex justify-center gap-4 flex-wrap">
             <a href="/ebazaar/products" className="bg-yellow-400 text-white font-semibold py-3 px-6 rounded-full hover:-translate-y-1 transition shadow-lg">Shop Products</a>
-            <a href="#features" className="bg-yellow-400 text-white font-semibold py-3 px-6 rounded-full hover:-translate-y-1 transition shadow-lg">Explore Platform</a>
+            <a href="/ebazaar/explore" className="bg-yellow-400 text-white font-semibold py-3 px-6 rounded-full hover:-translate-y-1 transition shadow-lg">Explore Platform</a>
             <a href="#app" className="border border-white text-white py-3 px-6 rounded-full hover:-translate-y-1 transition shadow-lg">View Mobile App</a>
           </div>
         </div>
